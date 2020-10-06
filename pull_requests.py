@@ -86,21 +86,25 @@ else:
 '''
 
 # Emma - Write a function that takes in a person's monthly budget as input. Output whether the person was under budget or over budget by printing a properly formatted message.
-'''
-monthlyBudget = float(input("Enter your monthly budget: "))
-while(expense != "stop"):
-    expense = input("Enter an expense, or if the month is over, type 'stop': ").lower().strip()
-    if(expense != "stop"):
-        expense = float(expense)
-        monthlyBudget = monthlyBudget - expense
-if(monthlyBudget > 0):
-    print("You were $" + format(monthlyBudget, ',.2f') + " under budget!")
-elif(monthlyBudget == 0):
-    print("You were exactly on budget.")
-else:
-    monthlyBudget = monthlyBudget * -1
-    print("You were $" + format(monthlyBudget, ',.2f') + " over budget.")
-'''
+def over_or_under_budget(monthlyBudget):
+    expense = 0
+    while(expense != "stop"):
+        expense = input("Enter an expense, or if the month is over, type 'stop': ").lower().strip()
+        if(expense != "stop"):
+            expense = float(expense)
+            monthlyBudget -= expense
+    if(monthlyBudget > 0):
+        print("You were $" + format(monthlyBudget, ',.2f') + " under budget!")
+    elif(monthlyBudget == 0):
+        print("You were exactly on budget.")
+    else:
+        monthlyBudget = monthlyBudget * -1
+        print("You were $" + format(monthlyBudget, ',.2f') + " over budget.")
+
+over_or_under_budget(10000)
+over_or_under_budget(8700)
+over_or_under_budget(6890)
+print()
 
 # Tresha - Write a function that takes a number of points earned and total possible points as input. Output the person's grade percentage by printing a properly formatted message.
 '''
