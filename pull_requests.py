@@ -43,20 +43,25 @@ else:
 '''
 
 # Paula - Write a function that takes in a person's age as input. Output their age categroy by printing a properly formatted message.
-'''
-age = int(input("Think of a person. What is their age in years? "))
-if(age >= 0):
-    if(age >= 0 and age <= 1):
-        print("The person is an infant.")
-    elif(age <= 12):
-        print("The person is a child.")
-    elif(age <= 19):
-        print("The person is a teenager.")
-    elif (age >19):
-        print("The person is an adult.")
-else:
-    print("Invalid age")
-'''
+def ageCategory(age):
+    if(age >= 0):
+        if(age >= 0 and age <= 1):
+            print("The person is an infant.")
+        elif(age <= 12):
+            print("The person is a child.")
+        elif(age <= 19):
+            print("The person is a teenager.")
+        elif (age >19):
+            print("The person is an adult.")
+    else:
+        print("Invalid age")
+
+ageCategory(13)
+ageCategory(1)
+ageCategory(85)
+print()
+
+
 # Nicholas - Write a function that takes in a person's weight and height as input. Output the person's BMI by printing a properly formatted message.
 '''
 userWeight = float( input( "Please enter your weight in pounds: " ) )
