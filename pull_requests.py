@@ -17,6 +17,7 @@ print()
     print("the temperature is: ", format(fahrenheit, ".2f"))
 
 '''
+
 # Keegan - Write a function that takes in the number of males and femalse as input. Output the percentages by printing a properly formatted message.
 '''
 numberMales = int(input( "How many males: "))
@@ -47,20 +48,25 @@ print(primaryColorsMix("blue","red"))
 print()
 
 # Paula - Write a function that takes in a person's age as input. Output their age categroy by printing a properly formatted message.
-'''
-age = int(input("Think of a person. What is their age in years? "))
-if(age >= 0):
-    if(age >= 0 and age <= 1):
-        print("The person is an infant.")
-    elif(age <= 12):
-        print("The person is a child.")
-    elif(age <= 19):
-        print("The person is a teenager.")
-    elif (age >19):
-        print("The person is an adult.")
-else:
-    print("Invalid age")
-'''
+def ageCategory(age):
+    if(age >= 0):
+        if(age >= 0 and age <= 1):
+            print("The person is an infant.")
+        elif(age <= 12):
+            print("The person is a child.")
+        elif(age <= 19):
+            print("The person is a teenager.")
+        elif (age >19):
+            print("The person is an adult.")
+    else:
+        print("Invalid age")
+
+ageCategory(13)
+ageCategory(1)
+ageCategory(85)
+print()
+
+
 # Nicholas - Write a function that takes in a person's weight and height as input. Output the person's BMI by printing a properly formatted message.
 '''
 userWeight = float( input( "Please enter your weight in pounds: " ) )
@@ -94,23 +100,48 @@ if pocketNum >= 0:
 else: 
     print('You must enter a number greater than 0')
 '''
+def pocketNumber(num):
+    redPockets = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
+    if num >= 0:
+        if num <= 36:
+            if num == 0:
+                return 'Green'
+            elif num in redPockets: # ! extrapolated from our experience using 'for ___ in ___:' turns out it works with if statements too 
+                return 'Red'
+            else:
+                return 'Black'
+        else:
+            print('You must enter a number less than 36')
+    else: 
+        print('You must enter a number greater than 0')
+
+
+
+print(pocketNumber(21))
+print(pocketNumber(15))
+print(pocketNumber(0))
+print()
 
 # Emma - Write a function that takes in a person's monthly budget as input. Output whether the person was under budget or over budget by printing a properly formatted message.
-'''
-monthlyBudget = float(input("Enter your monthly budget: "))
-while(expense != "stop"):
-    expense = input("Enter an expense, or if the month is over, type 'stop': ").lower().strip()
-    if(expense != "stop"):
-        expense = float(expense)
-        monthlyBudget = monthlyBudget - expense
-if(monthlyBudget > 0):
-    print("You were $" + format(monthlyBudget, ',.2f') + " under budget!")
-elif(monthlyBudget == 0):
-    print("You were exactly on budget.")
-else:
-    monthlyBudget = monthlyBudget * -1
-    print("You were $" + format(monthlyBudget, ',.2f') + " over budget.")
-'''
+def over_or_under_budget(monthlyBudget):
+    expense = 0
+    while(expense != "stop"):
+        expense = input("Enter an expense, or if the month is over, type 'stop': ").lower().strip()
+        if(expense != "stop"):
+            expense = float(expense)
+            monthlyBudget -= expense
+    if(monthlyBudget > 0):
+        print("You were $" + format(monthlyBudget, ',.2f') + " under budget!")
+    elif(monthlyBudget == 0):
+        print("You were exactly on budget.")
+    else:
+        monthlyBudget = monthlyBudget * -1
+        print("You were $" + format(monthlyBudget, ',.2f') + " over budget.")
+
+over_or_under_budget(10000)
+over_or_under_budget(8700)
+over_or_under_budget(6890)
+print()
 
 # Tresha - Write a function that takes a number of points earned and total possible points as input. Output the person's grade percentage by printing a properly formatted message.
 '''
