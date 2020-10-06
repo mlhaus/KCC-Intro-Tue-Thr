@@ -7,11 +7,17 @@ print( "Miles Per a Gallon is:", format(milesPerGallon, ".2f"))
 '''
 
 # Joss - Write a function that takes in a temperature in celsius as input. Output the temperature in fahrenheit by printing a properly formatted message.
-'''
-celsius = int(input("In Celsius, what is the temperture you would like converted over to Fahrenheit?"))
-fahrenheit = celsius * 9.0/5.0 + 32 
-print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
-'''
+
+def celsius_to_fahrenheit(celsius):
+    int(input("In Celsius, what is the temperture you would like converted over to Fahrenheit?"))
+    fahrenheit = celsius * 9.0/5.0 + 32 
+    print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
+
+celsius_to_fahrenheit(38)
+celsius_to_fahrenheit(50)
+celsius_to_fahrenheit(0)
+print()
+
 # Keegan - Write a function that takes in the number of males and femalse as input. Output the percentages by printing a properly formatted message.
 '''
 numberMales = int(input( "How many males: "))
