@@ -12,16 +12,19 @@ celsius = int(input("In Celsius, what is the temperture you would like converted
 fahrenheit = celsius * 9.0/5.0 + 32 
 print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
 '''
-# Keegan - Write a function that takes in the number of males and femalse as input. Output the percentages by printing a properly formatted message.
-'''
-numberMales = int(input( "How many males: "))
-numberFemales = int(input( "How many females: "))
-total = numberFemales + numberMales
-malePercent = numberMales / total
-femalePercent = numberFemales / total
-print ("Percentage of males: " , format(malePercent, ".0%"))
-print ("Percentage of females: " , format(femalePercent, ".0%"))
-'''
+# Keegan - Write a function that takes in the number of males and females as input. Output the percentages by printing a properly formatted message.
+def calculateMFPercentange(numberMales,numberFemales)
+    total = numberFemales + numberMales
+    malePercent = numberMales / total
+    femalePercent = numberFemales / total
+    print ("Percentage of males: " , format(malePercent, ".0%"))
+    print ("Percentage of females: " , format(femalePercent, ".0%"))
+
+calculateMFPercentange(12,15)
+calculateMFPercentange( 20, 15)
+calculateMFPercentange( 15, 40)
+
+
 # Danielle - Write a function that takes in two primary colors as input. Return the secondary color (do not print inside the function).
 '''
 color1 = input("what is your first main color? ")
