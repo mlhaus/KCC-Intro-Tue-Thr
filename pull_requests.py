@@ -1,11 +1,12 @@
 # Marc - Write a function that takes in milesDriven and gallonsUsed as input. Output the milesPerGallon by printing a properly formatted message.
-'''
-milesDriven = input( "Enter Miles Driven: ")
-gallonsUsed = input( "Enter Gallons Used: ")
-milesPerGallon = float (milesDriven) / float (gallonsUsed)
-print( "Miles Per a Gallon is:", format(milesPerGallon, ".2f"))
-'''
+def calculateMilesPerGallon(milesDriven, gallonsUsed):
+    milesPerGallon = float (milesDriven) / float (gallonsUsed)
+    print( "Miles Per a Gallon is:", format(milesPerGallon, ".2f"))
 
+calculateMilesPerGallon(100, 5.5)
+calculateMilesPerGallon(500, 31)
+calculateMilesPerGallon(10, 0.5)
+print()
 # Joss - Write a function that takes in a temperature in celsius as input. Output the temperature in fahrenheit by printing a properly formatted message.
 '''
 celsius = int(input("In Celsius, what is the temperture you would like converted over to Fahrenheit?"))
