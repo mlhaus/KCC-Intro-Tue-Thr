@@ -9,7 +9,6 @@ print( "Miles Per a Gallon is:", format(milesPerGallon, ".2f"))
 # Joss - Write a function that takes in a temperature in celsius as input. Output the temperature in fahrenheit by printing a properly formatted message.
 
 def celsius_to_fahrenheit(celsius):
-    int(input("In Celsius, what is the temperture you would like converted over to Fahrenheit?"))
     fahrenheit = celsius * 9.0/5.0 + 32 
     print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
 
