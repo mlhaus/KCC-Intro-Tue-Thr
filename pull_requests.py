@@ -111,20 +111,24 @@ if (points_possible != 0 and points_earned < points_possible):
 '''
 
 # Jason - Write a function that takes in an assignment score as input. Return the letter grade (do not print inside the function).
-'''
-score = int(input("Enter your score: "))
-if (score >= 90):
-    grade = "A"
-elif (score >= 80):
-    grade = "B"
-elif (score >= 70):
-    grade = "C"
-elif (score >= 60):
-    grade = "D"
-else:
-    grade = "F"
-print(grade)
-'''
+def gradingScale(score):
+    if (score >= 90):
+        grade = "A"
+    elif (score >= 80):
+        grade = "B"
+    elif (score >= 70):
+        grade = "C"
+    elif (score >= 60):
+        grade = "D"
+    else:
+        grade = "F"
+    return grade
+gradingScale(90)
+gradingScale(59)
+gradingScale(74)
+print()
+print()
+
 
 # Jaxson - Write a function that takes in two numbers as input. Output all of the numbers between the start value and the stop value by printing a properly formatted message.
 '''
