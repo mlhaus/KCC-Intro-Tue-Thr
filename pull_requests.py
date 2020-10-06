@@ -123,9 +123,9 @@ def gradingScale(score):
     else:
         grade = "F"
     return grade
-gradingScale(90)
-gradingScale(59)
-gradingScale(74)
+print(gradingScale(90))
+print(gradingScale(59))
+print(gradingScale(74))
 print()
 print()
 
