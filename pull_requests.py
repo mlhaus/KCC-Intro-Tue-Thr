@@ -90,6 +90,27 @@ if pocketNum >= 0:
 else: 
     print('You must enter a number greater than 0')
 '''
+def pocketNumber(num):
+    redPockets = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
+    if num >= 0:
+        if num <= 36:
+            if num == 0:
+                return 'Green'
+            elif num in redPockets: # ! extrapolated from our experience using 'for ___ in ___:' turns out it works with if statements too 
+                return 'Red'
+            else:
+                return 'Black'
+        else:
+            print('You must enter a number less than 36')
+    else: 
+        print('You must enter a number greater than 0')
+
+
+
+print(pocketNumber(21))
+print(pocketNumber(15))
+print(pocketNumber(0))
+print()
 
 # Emma - Write a function that takes in a person's monthly budget as input. Output whether the person was under budget or over budget by printing a properly formatted message.
 '''
