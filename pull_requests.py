@@ -1,4 +1,6 @@
+
 # Marc - Write a function that takes in milesDriven and gallonsUsed as input. Output the milesPerGallon by printing a properly formatted message.
+'''
 def calculateMilesPerGallon(milesDriven, gallonsUsed):
     milesPerGallon = float (milesDriven) / float (gallonsUsed)
     print( "Miles Per a Gallon is:", format(milesPerGallon, ".2f"))
@@ -7,11 +9,13 @@ calculateMilesPerGallon(100, 5.5)
 calculateMilesPerGallon(500, 31)
 calculateMilesPerGallon(10, 0.5)
 print()
+'''
 # Joss - Write a function that takes in a temperature in celsius as input. Output the temperature in fahrenheit by printing a properly formatted message.
 '''
-celsius = int(input("In Celsius, what is the temperture you would like converted over to Fahrenheit?"))
-fahrenheit = celsius * 9.0/5.0 + 32 
-print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
+    celsius = int(input("In Celsius, what is the temperture you would like converted over to Fahrenheit?"))
+    fahrenheit = celsius * 9.0/5.0 + 32 
+    print("the temperature is: ", format(fahrenheit, ".2f"))
+
 '''
 # Keegan - Write a function that takes in the number of males and femalse as input. Output the percentages by printing a properly formatted message.
 '''
@@ -24,18 +28,23 @@ print ("Percentage of males: " , format(malePercent, ".0%"))
 print ("Percentage of females: " , format(femalePercent, ".0%"))
 '''
 # Danielle - Write a function that takes in two primary colors as input. Return the secondary color (do not print inside the function).
-'''
-color1 = input("what is your first main color? ")
-color2 = input("what is your second main color? ")
-if (color1 == "red" and color2 == "blue") or (color1 == "blue" and color2 == "red"):
-    print("purple")
-elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 == "red"):
-    print("orange")
-elif (color1 == "blue" and color2 == "yellow") or (color1 == "yellow" and color2 == "blue"):
-    print("green")
-else:
-    print("Not base colors")
-'''
+
+def primaryColorsMix(color1, color2):
+    
+    if (color1 == "red" and color2 == "blue") or (color1 == "blue" and color2 == "red"):
+        return("purple")
+    elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 == "red"):
+        return("orange")
+    elif (color1 == "blue" and color2 == "yellow") or (color1 == "yellow" and color2 == "blue"):
+        return("green")
+    else:
+        return("Not base colors")
+
+print(primaryColorsMix("blue","yellow"))
+
+print(primaryColorsMix("red","yellow"))
+print(primaryColorsMix("blue","red"))
+print()
 
 # Paula - Write a function that takes in a person's age as input. Output their age categroy by printing a properly formatted message.
 '''
