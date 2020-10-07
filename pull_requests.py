@@ -8,7 +8,6 @@ calculateMilesPerGallon(500, 31)
 calculateMilesPerGallon(10, 0.5)
 print()
 # Joss - Write a function that takes in a temperature in celsius as input. Output the temperature in fahrenheit by printing a properly formatted message.
-
 def celsius_to_fahrenheit(celsius):
     fahrenheit = celsius * 9.0/5.0 + 32 
     print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
@@ -18,16 +17,18 @@ celsius_to_fahrenheit(50)
 celsius_to_fahrenheit(0)
 print()
 
-# Keegan - Write a function that takes in the number of males and femalse as input. Output the percentages by printing a properly formatted message.
-'''
-numberMales = int(input( "How many males: "))
-numberFemales = int(input( "How many females: "))
-total = numberFemales + numberMales
-malePercent = numberMales / total
-femalePercent = numberFemales / total
-print ("Percentage of males: " , format(malePercent, ".0%"))
-print ("Percentage of females: " , format(femalePercent, ".0%"))
-'''
+# Keegan - Write a function that takes in the number of males and females as input. Output the percentages by printing a properly formatted message.
+def calculateMFPercentange(numberMales,numberFemales)
+    total = numberFemales + numberMales
+    malePercent = numberMales / total
+    femalePercent = numberFemales / total
+    print ("Percentage of males: " , format(malePercent, ".0%"))
+    print ("Percentage of females: " , format(femalePercent, ".0%"))
+
+calculateMFPercentange(12,15)
+calculateMFPercentange( 20, 15)
+calculateMFPercentange( 15, 40)
+
 # Danielle - Write a function that takes in two primary colors as input. Return the secondary color (do not print inside the function).
 '''
 color1 = input("what is your first main color? ")
