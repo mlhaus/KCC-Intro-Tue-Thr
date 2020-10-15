@@ -10,7 +10,27 @@ def drawBoard(board):
 
 def checkWinner(board, player):
     # TODO - Write an if statement to check if there are 3 matching values. Note: there are 8 different combinations to win. For example, if board indexes 0, 1, and 2 are all equal we have a winner. You will need to combine 8 boolean expressions with "or" operators. (Joss)
-    
+
+    if board[0] == board[1] and board[1] == board[2]:
+        return True
+    elif board[3] == board [4] and board[4] == board[5]:
+        return True
+    elif board[6] == board [7] and board[7] == board[8]:
+        return True
+    elif board[0] == board [3] and board[3] == board[6]:
+        return True    
+    elif board[1] == board [4] and board[4] == board[7]:
+        return True
+    elif board[2] == board [5] and board[5] == board[8]:
+        return True
+    elif board[0] == board [4] and board[4] == board[8]:
+        return True
+    elif board[2] == board [4] and board[4] == board[6]:
+        return True
+    else:
+        return False
+
+
         # TODO - If true, print a message to congratulate the player that won and return True (Danielle)
         
     # TODO - Otherwise, return False (Danielle)
