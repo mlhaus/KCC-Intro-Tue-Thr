@@ -44,6 +44,4 @@ def main():
         checkWinner(board, currentPlayer)
         
 
-        
-
 main()
