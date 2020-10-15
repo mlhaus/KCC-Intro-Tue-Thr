@@ -10,20 +10,22 @@ calculateMilesPerGallon(500, 31)
 calculateMilesPerGallon(10, 0.5)
 print()
 '''
+
+
+
 # Joss - Write a function that takes in a temperature in celsius as input. Output the temperature in fahrenheit by printing a properly formatted message.
 def celsius_to_fahrenheit(celsius):
     fahrenheit = celsius * 9.0/5.0 + 32 
-    print("the temperature is: ", format(fahrenheit, ".2f"))
-
-'''
+    print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
 
 # Keegan - Write a function that takes in the number of males and females as input. Output the percentages by printing a properly formatted message.
-def calculateMFPercentange(numberMales,numberFemales)
+def calculateMFPercentange(numberMales,numberFemales):
     total = numberFemales + numberMales
     malePercent = numberMales / total
     femalePercent = numberFemales / total
     print ("Percentage of males: " , format(malePercent, ".0%"))
     print ("Percentage of females: " , format(femalePercent, ".0%"))
+
 
 calculateMFPercentange(12,15)
 calculateMFPercentange( 20, 15)
@@ -165,13 +167,11 @@ def gradingScale(score):
     else:
         grade = "F"
     return grade
+
+print(gradingScale(68))
+print(gradingScale(79))
 print(gradingScale(90))
-print(gradingScale(59))
-print(gradingScale(74))
 print()
-print()
-
-
 # Jaxson - Write a function that takes in two numbers as input. Output all of the numbers between the start value and the stop value by printing a properly formatted message.
 '''
 start = int(input("Give a starting number: "))
