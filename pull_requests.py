@@ -37,7 +37,7 @@ else:
 '''
 
 # Paula - Write a function that takes in a person's age as input. Output their age categroy by printing a properly formatted message.
-def ageCategory(age):
+def categorizeAge(age):
     if(age >= 0):
         if(age >= 0 and age <= 1):
             print("The person is an infant.")
@@ -50,9 +50,9 @@ def ageCategory(age):
     else:
         print("Invalid age")
 
-ageCategory(13)
-ageCategory(1)
-ageCategory(85)
+categorizeAge(13)
+categorizeAge(1)
+categorizeAge(85)
 print()
 
 
