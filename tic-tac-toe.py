@@ -20,6 +20,10 @@ def switchPlayer(player):
     # TODO - Write an if-else statement to change the player from "X" to "O", and vice versa. (Danielle)
     
     # TODO - Print a message indicating who the current player is. And return the player variable. (Jason)
+    for i in range (10)
+        drawboard (board)
+        print ("It's your turn," + player + "choose your spot")
+
     
 
 def main():
@@ -27,6 +31,7 @@ def main():
     currentPlayer = "O"
     gameOver = False
     # TODO - Write  while a loop that will run continuosly while the game is not over. Use the gameOver variable. (Jason)
+    
     
         # TODO - Call the drawBoard function, passing the board array to the function. No value will be returned. (Tresha)
         
