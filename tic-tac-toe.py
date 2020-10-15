@@ -36,7 +36,6 @@ def main():
         # TODO - Prompt the player for a number between 1 and 9. Give them an infinite amount of attempts. Convert the numerical input to an integer. Assign the player's response to the choice variable. (Medium)
         
         # TODO - Using the choice variable, write a while loop that checks if an "X" or "O" is currently located at the index the player chose. Note: if the user chooses 1, we need to check the value at index 0. If true, prompt the user for another choice using the same logic as the previous TODO (Hard)
-        
 
         # TODO - Assign the currentPlayer variable to location the player chose in the board array. Note: if the user chooses 1, we need to assign the value to index 0. (Medium)
         
