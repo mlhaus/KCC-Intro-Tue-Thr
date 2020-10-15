@@ -14,15 +14,17 @@ fahrenheit = celsius * 9.0/5.0 + 32
 print(celsius, "degrees is", fahrenheit, "degrees in Fahrenheit.")
 '''
 # Keegan - Write a function that takes in the number of males and femalse as input. Output the percentages by printing a properly formatted message.
-'''
-numberMales = int(input( "How many males: "))
-numberFemales = int(input( "How many females: "))
-total = numberFemales + numberMales
-malePercent = numberMales / total
-femalePercent = numberFemales / total
-print ("Percentage of males: " , format(malePercent, ".0%"))
-print ("Percentage of females: " , format(femalePercent, ".0%"))
-'''
+def calculateMFPercentage(numberMales, numberFemales):
+    total = numberFemales + numberMales
+    malePercent = numberMales / total
+    femalePercent = numberFemales / total
+    print ("Percentage of males: " , format(malePercent, ".0%"))
+    print ("Percentage of females: " , format(femalePercent, ".0%"))
+
+calculateMFPercentage(12, 11)
+calculateMFPercentage(7, 15)
+calculateMFPercentage(2, 3)
+print()
 # Danielle - Write a function that takes in two primary colors as input. Return the secondary color (do not print inside the function).
 '''
 color1 = input("what is your first main color? ")
@@ -112,21 +114,24 @@ if (points_possible != 0 and points_earned < points_possible):
 '''
 
 # Jason - Write a function that takes in an assignment score as input. Return the letter grade (do not print inside the function).
-'''
-score = int(input("Enter your score: "))
-if (score >= 90):
-    grade = "A"
-elif (score >= 80):
-    grade = "B"
-elif (score >= 70):
-    grade = "C"
-elif (score >= 60):
-    grade = "D"
-else:
-    grade = "F"
-print(grade)
-'''
 
+def gradingScale(score):
+    if (score >= 90):
+        grade = "A"
+    elif (score >= 80):
+        grade = "B"
+    elif (score >= 70):
+        grade = "C"
+    elif (score >= 60):
+        grade = "D"
+    else:
+        grade = "F"
+    return grade
+
+print(gradingScale(68))
+print(gradingScale(79))
+print(gradingScale(90))
+print()
 # Jaxson - Write a function that takes in two numbers as input. Output all of the numbers between the start value and the stop value by printing a properly formatted message.
 '''
 start = int(input("Give a starting number: "))
