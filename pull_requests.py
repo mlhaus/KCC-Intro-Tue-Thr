@@ -185,4 +185,3 @@ stop = int(input("Give a stopping number: "))
 while(start <= stop):
     print(start)
     start += 1 # increments the start variable by 1
-'''
