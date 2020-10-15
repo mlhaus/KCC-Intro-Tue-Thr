@@ -41,7 +41,9 @@ def main():
         board[choice - 1] = currentPlayer
         
         # TODO - Call the checkWinner function. Pass the board array and the currentPlayer to the function. The value returned will be assigned to the gameOver variable. (Jeremy)
-        checkWinner(board, currentPlayer)
+        gameOver = checkWinner(board, currentPlayer)
         
+
+
 
 main()
