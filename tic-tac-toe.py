@@ -28,11 +28,11 @@ def checkWinner(board, player):
     elif board[2] == board [4] and board[4] == board[6]:
         result = True
     else:
-        return False
+        return = False
 
-    if result = True:
-        print ("congratulation!")
-        return result
+    if result == True:
+        print ("congratulations!" , currentPlayer)
+    return result
 
 
         # TODO - If true, print a message to congratulate the player that won and return True (Danielle)
@@ -42,11 +42,11 @@ def checkWinner(board, player):
 
 def switchPlayer(player):
     # TODO - Write an if-else statement to change the player from "X" to "O", and vice versa. (Danielle)
-    if turn == "x":
-        turn = "o"
+    if player == "X":
+        player = "O"
 
     else:
-        turn = "x"
+        player = "X"
 
     # TODO - Print a message indicating who the current player is. And return the player variable. (Jason)
     print ("It's your turn " + player + ".")
