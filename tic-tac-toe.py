@@ -63,8 +63,12 @@ def main():
         
 
         # TODO - Assign the currentPlayer variable to location the player chose in the board array. Note: if the user chooses 1, we need to assign the value to index 0. (Jeremy)
+        board[choice - 1] = currentPlayer
         
         # TODO - Call the checkWinner function. Pass the board array and the currentPlayer to the function. The value returned will be assigned to the gameOver variable. (Jeremy)
+        gameOver = checkWinner(board, currentPlayer)
         
+
+
 
 main()
