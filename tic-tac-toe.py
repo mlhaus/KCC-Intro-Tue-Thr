@@ -36,10 +36,8 @@ def main():
         # TODO - Prompt the player for a number between 1 and 9. Give them an infinite amount of attempts. Convert the numerical input to an integer. Assign the player's response to the choice variable. (Emma)
         
         # TODO - Using the choice variable, write a while loop that checks if an "X" or "O" is currently located at the index the player chose. Note: if the user chooses 1, we need to check the value at index 0. If true, prompt the user for another choice using the same logic as the previous TODO (Paula)
-    while board[choice - 1] == "X" or board[choice - 1] == "O":
-            if True:
-                print("Prompt from above")
-
+        while board[choice - 1] == "X" or board[choice - 1] == "O":
+            choice = getNum("Enter a number: ", 1, 9, float("inf"), True)
         # TODO - Assign the currentPlayer variable to location the player chose in the board array. Note: if the user chooses 1, we need to assign the value to index 0. (Jeremy)
         
         # TODO - Call the checkWinner function. Pass the board array and the currentPlayer to the function. The value returned will be assigned to the gameOver variable. (Jeremy)
