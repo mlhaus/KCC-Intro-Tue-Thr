@@ -8,6 +8,7 @@ def drawBoard(board):
     #-----------
     # 7 | 8 | 9
 
+
 def checkWinner(board, player):
     # TODO - Write an if statement to check if there are 3 matching values. Note: there are 8 different combinations to win. For example, if board indexes 0, 1, and 2 are all equal we have a winner. You will need to combine 8 boolean expressions with "or" operators. (Joss)
 
@@ -60,8 +61,8 @@ def main():
         choice = getNum("Pick a box: ", 1, 9, float("inf"), True)
         
         # TODO - Using the choice variable, write a while loop that checks if an "X" or "O" is currently located at the index the player chose. Note: if the user chooses 1, we need to check the value at index 0. If true, prompt the user for another choice using the same logic as the previous TODO (Paula)
-        
-
+        while board[choice - 1] == "X" or board[choice - 1] == "O":
+            choice = getNum("Enter a number: ", 1, 9, float("inf"), True)
         # TODO - Assign the currentPlayer variable to location the player chose in the board array. Note: if the user chooses 1, we need to assign the value to index 0. (Jeremy)
         board[choice - 1] = currentPlayer
         
