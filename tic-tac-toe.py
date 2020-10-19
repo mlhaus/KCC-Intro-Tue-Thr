@@ -53,15 +53,12 @@ def main():
     while not gameOver:
         
         # TODO - Call the drawBoard function, passing the board array to the function. No value will be returned. (Tresha)
-        def drawBoard():
+        def drawBoard(board):
         
         # TODO - Call the switchPlayer function, passing the currentPlayer variable as the argument. The result returned will be assigned back to the currentPlayer variable. (Tresha)
         
-         if currentPlayer == "X"
-            currentPlayer = "O"
-        else:
-            currentPlayer = "X"        
-        return currentPlayer
+        currentPlayer = switchPlayer(currentPlayer):
+        
         
         # TODO - Prompt the player for a number between 1 and 9. Give them an infinite amount of attempts. Convert the numerical input to an integer. Assign the player's response to the choice variable. (Emma)
         choice = getNum("Pick a box: ", 1, 9, float("inf"), True)
