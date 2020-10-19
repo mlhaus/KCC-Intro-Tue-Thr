@@ -64,7 +64,7 @@ def main():
         
         # TODO - Call the drawBoard function, passing the board array to the function. No value will be returned. (Tresha)
         
-        def drawBoard(board):
+        drawBoard(board):
         
         # TODO - Call the switchPlayer function, passing the currentPlayer variable as the argument. The result returned will be assigned back to the currentPlayer variable. (Tresha)
         
