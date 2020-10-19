@@ -51,7 +51,7 @@ print(primaryColorsMix("blue","red"))
 print()
 
 # Paula - Write a function that takes in a person's age as input. Output their age categroy by printing a properly formatted message.
-def ageCategory(age):
+def categorizeAge(age):
     if(age >= 0):
         if(age >= 0 and age <= 1):
             print("The person is an infant.")
@@ -64,9 +64,9 @@ def ageCategory(age):
     else:
         print("Invalid age")
 
-ageCategory(13)
-ageCategory(1)
-ageCategory(85)
+categorizeAge(13)
+categorizeAge(1)
+categorizeAge(85)
 print()
 
 
@@ -147,12 +147,16 @@ over_or_under_budget(6890)
 print()
 
 # Tresha - Write a function that takes a number of points earned and total possible points as input. Output the person's grade percentage by printing a properly formatted message.
-'''
-points_earned = int(input("Enter points earned: "))
-points_possible = int(input("Enter possible points: "))
-if (points_possible != 0 and points_earned < points_possible):
-  print(points_earned, "/", points_possible, "=", "{:.2%}".format(points_earned/points_possible))
-'''
+
+def calculatePoints(points_earned, points_possible):
+    if (points_possible != 0 and points_earned < points_possible):
+        print(points_earned, "/", points_possible, "=", "{:.2%}".format(points_earned/points_possible))
+
+calculatePoints(100, 100)
+calculatePoints(90, 100)
+calculatePoints(80, 100)
+print()
+
 
 # Jason - Write a function that takes in an assignment score as input. Return the letter grade (do not print inside the function).
 def gradingScale(score):
