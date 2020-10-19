@@ -67,7 +67,6 @@ def main():
         drawBoard(board)
         
         # TODO - Call the switchPlayer function, passing the currentPlayer variable as the argument. The result returned will be assigned back to the currentPlayer variable. (Tresha)
-        
         currentPlayer = switchPlayer(currentPlayer)
 
         # TODO - Prompt the player for a number between 1 and 9. Give them an infinite amount of attempts. Convert the numerical input to an integer. Assign the player's response to the choice variable. (Emma)
