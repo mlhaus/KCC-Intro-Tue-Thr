@@ -1,6 +1,7 @@
 from helpers import getNum
 
 def drawBoard(board):
+    print()
     #TODO - Print the values in the board array parameter. Format them in a tic-tac-toe board (Keegan)
     # 1 | 2 | 3
     #-----------
@@ -29,10 +30,10 @@ def checkWinner(board, player):
     elif board[2] == board [4] and board[4] == board[6]:
         result = True
     else:
-        return = False
+        return False
 
     if result == True:
-        print ("congratulations!" , currentPlayer)
+        print ("congratulations!" , player)
     return result
 
 
@@ -63,12 +64,11 @@ def main():
     while not gameOver:
         
         # TODO - Call the drawBoard function, passing the board array to the function. No value will be returned. (Tresha)
-        
-        drawBoard(board):
+        drawBoard(board)
         
         # TODO - Call the switchPlayer function, passing the currentPlayer variable as the argument. The result returned will be assigned back to the currentPlayer variable. (Tresha)
         
-        currentPlayer = switchPlayer(currentPlayer):
+        currentPlayer = switchPlayer(currentPlayer)
 
         # TODO - Prompt the player for a number between 1 and 9. Give them an infinite amount of attempts. Convert the numerical input to an integer. Assign the player's response to the choice variable. (Emma)
         choice = getNum("Pick a box: ", 1, 9, float("inf"), True)
