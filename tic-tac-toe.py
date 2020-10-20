@@ -54,6 +54,7 @@ def main():
     board = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
     currentPlayer = "O"
     gameOver = False
+    turnCount = 0
     while not gameOver:
         drawBoard(board)
         currentPlayer = switchPlayer(currentPlayer)
@@ -62,6 +63,10 @@ def main():
             choice = getNum("Enter a number: ", 1, 9, float("inf"), True)
         board[choice - 1] = currentPlayer
         gameOver = checkWinner(board, currentPlayer)
+        turnCount += 1
+        if turnCount == 9 and gameOver != True:
+            print('It\'s a tie')
+            break
         #TODO - Create a variable that counts the number of turns. If 9 turns have been taken, says "It's a tie" and end the game.
         
 
