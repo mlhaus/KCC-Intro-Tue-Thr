@@ -149,10 +149,8 @@ print()
 # Tresha - Write a function that takes a number of points earned and total possible points as input. Output the person's grade percentage by printing a properly formatted message.
 
 def calculatePoints(points_earned, points_possible):
-points_earned = int(input("Enter points earned: "))
-points_possible = int(input("Enter possible points: "))
-if (points_possible != 0 and points_earned < points_possible):
-    print(points_earned, "/", points_possible, "=", "{:.2%}".format(points_earned/points_possible))
+    if (points_possible != 0 and points_earned < points_possible):
+        print(points_earned, "/", points_possible, "=", "{:.2%}".format(points_earned/points_possible))
 
 calculatePoints(100, 100)
 calculatePoints(90, 100)
