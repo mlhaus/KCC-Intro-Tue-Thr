@@ -44,6 +44,4 @@ def main():
         gameOver = checkWinner(board, currentPlayer)
         
 
-
-
 main()
