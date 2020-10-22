@@ -53,7 +53,7 @@ def main():
         board[choice - 1] = currentPlayer
         gameOver = checkWinner(board, currentPlayer)
 
-        drawBoard(board):
+        drawBoard(board)
 
         player = switchPlayer(currentPlayer)
      
