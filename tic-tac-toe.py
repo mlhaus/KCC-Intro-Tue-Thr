@@ -1,16 +1,11 @@
 from helpers import getNum
 
 def drawBoard(board):
-<<<<<<< HEAD
-    print()
-
-=======
     print(" " + board[0] + " | " + board[1] + " | " + board[2])
     print("-----------")
     print(" " + board[3] + " | " + board[4] + " | " + board[5])
     print("-----------")
     print(" " + board[6] + " | " + board[7] + " | " + board[8])
->>>>>>> 908d34a56a4a6c6dbed01accf298cd89ffa3f963
 
 def checkWinner(board, player):
     result = False
@@ -34,6 +29,7 @@ def checkWinner(board, player):
         result = False
 
     if result == True:
+        drawBoard(board)
         print ("congratulations!" , player)
     return result
     
@@ -43,7 +39,6 @@ def switchPlayer(player):
         player = "O"
     else:
         player = "X"
-
     print ("It's your turn " + player + ".")
     return player
     
@@ -61,24 +56,6 @@ def main():
             choice = getNum("Enter a number: ", 1, 9, float("inf"), True)
         board[choice - 1] = currentPlayer
         gameOver = checkWinner(board, currentPlayer)
-<<<<<<< HEAD
-
-        drawBoard(board)
-
-        player = switchPlayer(currentPlayer)
-     
-        
-        choice = getNum("Pick a box: ", 1, 9, float("inf"), True)
-        
-      
-        while board[choice - 1] == "X" or board[choice - 1] == "O":
-            choice = getNum("Enter a number: ", 1, 9, float("inf"), True)
-
-        board[choice - 1] = currentPlayer
-        
-        gameOver = checkWinner(board, currentPlayer)
-        
-=======
         turnCount += 1
         if turnCount == 9 and gameOver != True:
             print('It\'s a tie')
@@ -86,4 +63,3 @@ def main():
         
 
 main()
->>>>>>> 908d34a56a4a6c6dbed01accf298cd89ffa3f963
