@@ -1,18 +1,11 @@
 from helpers import getNum
 
 def drawBoard(board):
-    print('', board[0], '|', board[1], '|', board[2])
-    print('-----------')
-    print('', board[3], '|', board[4], '|', board[5])
-    print('-----------')
-    print('', board[6], '|', board[7], '|', board[8])
-    #TODO - Print the values in the board array parameter. Format them in a tic-tac-toe board
-    # 1 | 2 | 3
-    #-----------
-    # 4 | 5 | 6
-    #-----------
-    # 7 | 8 | 9
-
+    print(" " + board[0] + " | " + board[1] + " | " + board[2])
+    print("-----------")
+    print(" " + board[3] + " | " + board[4] + " | " + board[5])
+    print("-----------")
+    print(" " + board[6] + " | " + board[7] + " | " + board[8])
 
 def checkWinner(board, player):
     result = False
@@ -67,7 +60,6 @@ def main():
         if turnCount == 9 and gameOver != True:
             print('It\'s a tie')
             break
-        #TODO - Create a variable that counts the number of turns. If 9 turns have been taken, says "It's a tie" and end the game.
         
 
 main()
