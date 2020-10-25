@@ -30,6 +30,7 @@ def checkWinner(board, player):
         result = False
 
     if result == True:
+        drawBoard(board)
         print ("congratulations!" , player)
     return result
     
