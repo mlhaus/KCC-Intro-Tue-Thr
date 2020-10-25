@@ -7,6 +7,7 @@ def drawBoard(board):
     print("-----------")
     print(" " + board[6] + " | " + board[7] + " | " + board[8])
 
+
 def checkWinner(board, player):
     result = False
     if board[0] == board[1] and board[1] == board[2]:
