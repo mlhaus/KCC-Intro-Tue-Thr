@@ -14,8 +14,8 @@ def largerThan(list, n):
       count += 1
       if item > n:
         if item not in result:
-          (result.append(list)
-    print("List of numbers " + str(list)
+          (result.append(list))
+    print("List of numbers " + str(list))
     result.sort
     print("Numbers that are greater than " + str(n))
 
