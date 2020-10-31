@@ -40,7 +40,6 @@ def switchPlayer(player):
         player = "O"
     else:
         player = "X"
-
     print ("It's your turn " + player + ".")
     return player
     
